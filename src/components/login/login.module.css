@@ -1,0 +1,32 @@
+.login {
+  width: 25em;
+  background-color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.header {
+  background-color: teal;
+  padding: 1em;
+  width: 100%;
+  color: white;
+}
+.main {
+  width: 100%;
+  padding: 1em 0;
+}
+.footer {
+  width: 100%;
+  background-color: teal;
+  padding: 1em;
+  color: white;
+}
+.button {
+  width: 30em;
+  padding: 1em;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid teal;
+}
+.button:hover {
+  transform: scale(1.05);
+}
