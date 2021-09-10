@@ -1,17 +1,19 @@
 import React from "react";
 import styles from "./navbar.module.css";
 
-const Navbar = (props) => (
-  <div className={styles.navbar}>
-    <ul className={styles.ul}>
-      <li className={styles.li}>안녕</li>
-      <li className={styles.li}>안녕</li>
+const Navbar = ({ menuClick, clickBtn }) => {
+  const menuClicked = clickBtn && styles.clicked;
 
-      <li className={styles.li}>안녕</li>
-
-      <li className={styles.li}>안녕</li>
-    </ul>
-  </div>
-);
+  return (
+    <div className={styles.navbar}>
+      <button className={`${styles.button} ${menuClicked}`} onClick={menuClick}>
+        <span className={styles.menuBar}></span>
+        <span className={styles.menuBar}></span>
+        <span className={styles.menuBar}></span>
+      </button>
+      <h1 className={styles.title}>study group</h1>
+    </div>
+  );
+};
 
 export default Navbar;

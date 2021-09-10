@@ -1,17 +1,15 @@
-import React from "react";
-import Navbar from "../navbar/navbar";
-import StudyTime from "../study_time/study_time";
-import WakeUpTime from "../wake_up_time/wake_up_time";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import MainStudyTime from "../main_study_time/main_study_time";
+import MainWakeUpTime from "../main_wakeup_time/main_wakeup_time";
+
 import styles from "./main.module.css";
 
-const Main = (props) => {
+const Main = ({ dataRepository }) => {
   return (
     <section className={styles.main}>
-      <Navbar />
-      <div className={styles.container}>
-        <WakeUpTime />
-        <StudyTime />
-      </div>
+      <MainWakeUpTime dataRepository={dataRepository} />
+      <MainStudyTime />
     </section>
   );
 };

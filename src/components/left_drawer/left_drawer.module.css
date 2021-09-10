@@ -1,0 +1,34 @@
+.leftDrawer {
+  width: 10em;
+  position: fixed;
+  background-color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  transition: opacity 150ms ease-in-out;
+}
+.leftDrawer.open {
+  opacity: 1;
+}
+.leftDrawer.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+  text-decoration-line: none;
+  border-bottom: 1px solid gray;
+  padding-top: 0.5em;
+  cursor: pointer;
+}
+
+.leftDrawer a {
+  text-decoration: none;
+  color: black;
+}
