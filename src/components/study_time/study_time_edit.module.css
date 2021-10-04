@@ -1,6 +1,45 @@
-.studytime {
+.container {
   width: 100%;
-  height: 15em;
-  background-color: green;
-  color: white;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  margin: 0.7em 0;
+}
+
+.study {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  margin-bottom: 1em;
+}
+.input,
+.btn,
+.date {
+  outline: none;
+  font-size: 0.8rem;
+  width: 100%;
+  border: 0;
+  padding: 0.8em;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  background: White;
+  resize: none;
+}
+.date {
+  margin: 0;
+  background-color: rgb(226, 220, 220);
+}
+.btn {
+  background-color: teal;
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 .leftDrawer {
   width: 10em;
   position: fixed;
+  top: 3em;
   background-color: yellow;
   opacity: 0;
   display: flex;

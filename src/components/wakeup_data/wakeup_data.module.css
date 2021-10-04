@@ -1,0 +1,24 @@
+.wakeupData {
+  list-style: none;
+  background-color: rgb(191, 224, 204);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 20px;
+}
+.saveBtn {
+  width: 4em;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(173, 172, 172);
+}
+.wakeupInput {
+  margin-bottom: 1em;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  opacity: 0.8;
+}

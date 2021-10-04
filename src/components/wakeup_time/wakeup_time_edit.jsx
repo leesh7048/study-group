@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
-import moment from "moment";
+import React, { useState } from "react";
 
 import styles from "./wakeup_time_edit.module.css";
 
-const WakeUpTimeEdit = ({ saveBtnClick, datas, today }) => {
-  const [name, setName] = useState("");
+const WakeUpTimeEdit = ({ saveBtnClick, today }) => {
+  const [name, setName] = useState(localStorage.getItem("name") || "");
   const [wakeupTime, setWakeupTime] = useState("");
   const [wakeupComment, setWakeupComment] = useState("");
 
@@ -18,12 +17,6 @@ const WakeUpTimeEdit = ({ saveBtnClick, datas, today }) => {
     };
     saveBtnClick(data);
   };
-
-  useEffect(() => {
-    setName("");
-    setWakeupTime("");
-    setWakeupComment("");
-  }, [today]);
 
   return (
     <div className={styles.container}>
@@ -54,7 +47,7 @@ const WakeUpTimeEdit = ({ saveBtnClick, datas, today }) => {
           placeholder="wakeupComment"
         />
         <button className={styles.btn} onClick={onSubmit}>
-          {datas ? "수정하기" : "저장하기"}
+          저장
         </button>
       </form>
     </div>

@@ -4,7 +4,7 @@ import LeftDrawer from "../left_drawer/left_drawer";
 import Navbar from "../navbar/navbar";
 import styles from "./DefaultLayout.module.css";
 
-const DefaultLayout = ({ children, authService, cardRepasitory }) => {
+const DefaultLayout = ({ children, authService }) => {
   const history = useHistory();
 
   const [clickBtn, setClickBtn] = useState(false);
@@ -23,7 +23,7 @@ const DefaultLayout = ({ children, authService, cardRepasitory }) => {
         history.push("/");
       }
     });
-  }, []);
+  }, [authService, history]);
 
   const onMenuClick = () => {
     setClickBtn(false);

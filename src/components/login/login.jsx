@@ -18,7 +18,7 @@ const Login = ({ authService }) => {
     authService.onAuthChange((user) => {
       user && goToMain(user.uid);
     });
-  }, []);
+  }, [authService]);
 
   return (
     <section className={styles.login}>

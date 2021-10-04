@@ -1,0 +1,25 @@
+.studyTimeConfirm {
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.calender {
+  background-color: rgb(214, 235, 182);
+}
+.dateInput {
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.445);
+  width: 15em;
+  margin: 1em;
+  height: 2em;
+  cursor: pointer;
+}
+.dateInput:hover {
+  box-shadow: 0px 0px 10px 0px #6b6b6b;
+}
