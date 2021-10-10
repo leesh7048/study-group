@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Study Group
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 ReactJS로 만든 여러사람들과 함께 기상시간과 공부시간을 기록하는 Study Group 프로젝트입니다.  
+<br/><br/>
 
-## Available Scripts
+## 목차
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+1. 제작 이유
+2. 개발 스택
+3. 프로젝트 소개
+4. 배운점
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/><br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 제작 이유
 
-### `yarn test`
+- 카카오톡으로 기상시간, 공부시간 공유하는 스터디그룹을 하는 친구의 권유로 만들게되었음
+- reactjs로 프로젝트를 만들며 reactjs실력을 향상시키고 공부하기위해 만들게됨
+  <br/><br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 개발 스택
 
-### `yarn build`
+- reactjs
+  <br/><br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 프로젝트 소개
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. 로그인 페이지  
+    firebase를 이용해 구글아이디로 로그인
+   ![login](./img/login.png)
+   <br/><br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. 메인페이지  
+    로그인 후 나오는 메인페이지로 그룹원들이 그날 올린 데이터가 출력되는 페이지. 오늘 기상시간과, 공부시간 두가지로 나누어져서 출력됨  
+    ![main](./img/main.png)
+   <br/><br/>
+3. 데이터 등록,확인,편집 페이지  
+   ![edit](./img/edit.png)
+   - 저장  
+      이름,시간,코멘트를 입력하고 저장하는 컴포넌트
+     ![save](./img/save.png) -확인  
+      날짜를 클릭해 저장한 데이터를 날짜별로 확인하는 컴포넌트
+     ![confirm](./img/confirm.png) -편집  
+      저장한 데이터를 편집하는 컵포넌트
+     ![edit1](./img/edit1.png)
